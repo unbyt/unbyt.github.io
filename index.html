@@ -5,24 +5,12 @@
     <title>title</title>
   </head>
   <body>
+    <center><h1>i dont know lol</h1></center>
+    <script src="index.js"></script>
     <form>
-    Video Link:
+      <br>Video Link:</br>
     <input type="text" id="videoinput">
     <input type="submit" onclick="getFile()">
     </form>
-    <script src="text/javascript">
-      const ytdl = require('ytdl-core');
-      const fs = require('fs');
-
-      function getFile() {
-        try {
-          var text = document.getElementById("videoinput").value;
-          ytdl(text).pipe(fs.createWriteStream('video.mp4'));
-          alert("Completed!");
-        } catch(e) {
-          alert(e);
-        } 
-      }
-    </script>
   </body>
 </html>
